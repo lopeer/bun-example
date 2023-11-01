@@ -6,16 +6,15 @@ on:
       - main
 
 jobs:
-  first-job:
-    test:
-      runs-on: ubuntu-latest
+  test:
+    runs-on: ubuntu-latest
 
-      steps:
-        - name: Checkout repository
-          uses: actions/checkout@v3
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-        - name: Install and set up Bun
-          uses: oven-sh/setup-bun@v1
+      - name: Install and set up Bun
+        uses: oven-sh/setup-bun@v1
 
-        - name: Run tests
-          run: bun test
+      - name: Run tests
+        run: bun test
