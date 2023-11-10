@@ -4,6 +4,6 @@ COPY . .
 RUN bun install
  
 ARG PORT
-EXPOSE 3000
+EXPOSE 8080
  
-CMD ["bun", "run", "dev"]
+CMD ["bun", "run", "start"]
