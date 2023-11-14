@@ -1,9 +1,9 @@
-FROM oven/bun:1
+FROM oven/bun:latest
 WORKDIR /app
 COPY . .
 RUN bun install
  
 ARG PORT
-EXPOSE 3000
+EXPOSE 8080
  
 CMD ["bun", "run", "dev"]
